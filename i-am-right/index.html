@@ -1,12 +1,330 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>I Am Right</title>
-</head>
-<body>
-<h1>I Am Right</h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Definitely A Real Scientific Journal</title>
+  <style>
+    :root {
+      --ink: #1f2933;
+      --muted: #667085;
+      --border: #d0d5dd;
+      --bg: #f6f7f9;
+      --paper: #ffffff;
+      --accent: #123c69;
+      --gold: #b68d40;
+    }
 
-<p>After extensive peer review of my own opinions, I have concluded that I am correct.</p></body>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 40px auto;
+      background: var(--paper);
+      padding: 48px;
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 35px rgba(0,0,0,.08);
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 3px double var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .journal-name {
+      font-size: 1.9rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0;
+    }
+
+    .subtitle {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 12px;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      color: var(--accent);
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      margin-top: 36px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      font-size: 1.25rem;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px 24px;
+      padding: 16px;
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      margin: 24px 0;
+      font-size: .95rem;
+    }
+
+    .meta strong {
+      color: var(--accent);
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding: 16px 22px;
+      border-left: 5px solid var(--gold);
+      background: #faf7f0;
+      font-size: 1.1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #eef2f6;
+      color: var(--accent);
+    }
+
+    .decision {
+      text-align: center;
+      border: 2px solid var(--gold);
+      padding: 24px;
+      margin: 32px 0;
+      background: #fffaf0;
+    }
+
+    .decision strong {
+      display: block;
+      font-size: 1.6rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    .checkbox {
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 3px double var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .footer-title {
+      color: var(--accent);
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .fine-print {
+      margin-top: 16px;
+      font-size: .82rem;
+      font-style: italic;
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+        border: none;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        margin: 0;
+        padding: 28px 20px;
+      }
+
+      .meta {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header>
+      <p class="journal-name">Definitely A Real Scientific Journal</p>
+      <p class="subtitle">Independent Peer Review Division</p>
+      <span class="badge">Peer Reviewed*</span>
+    </header>
+
+    <h1>Article Review Report</h1>
+
+    <div class="meta">
+      <div><strong>Manuscript ID:</strong> DARSJ-2026-0042</div>
+      <div><strong>Submission Date:</strong> June 22, 2026</div>
+      <div><strong>Review Date:</strong> June 22, 2026</div>
+      <div><strong>Review Type:</strong> Double-Blind*</div>
+    </div>
+
+    <h2>Manuscript Title</h2>
+    <blockquote>Why I Am Correct About This Thing</blockquote>
+
+    <h2>Abstract</h2>
+    <p>
+      The author presents a compelling argument that aligns with my previously
+      held beliefs. The findings are therefore considered highly credible,
+      scientifically satisfying, and worthy of immediate publication.
+    </p>
+
+    <h2>Review Criteria</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Scientific Rigor</td>
+          <td>10/10</td>
+        </tr>
+        <tr>
+          <td>Statistical Analysis</td>
+          <td>10/10</td>
+        </tr>
+        <tr>
+          <td>Citation Quality</td>
+          <td>10/10</td>
+        </tr>
+        <tr>
+          <td>Emotional Satisfaction</td>
+          <td>10/10</td>
+        </tr>
+        <tr>
+          <td>Agreement With Reviewer</td>
+          <td>10/10</td>
+        </tr>
+        <tr>
+          <td>Ability To Win Internet Arguments</td>
+          <td>10/10</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Reviewer Comments</h2>
+
+    <h3>Major Strengths</h3>
+    <ul>
+      <li>Confirms what I already thought.</li>
+      <li>Uses several words longer than three syllables.</li>
+      <li>References at least one website.</li>
+      <li>Conclusion is extremely agreeable.</li>
+    </ul>
+
+    <h3>Minor Concerns</h3>
+    <p>None identified.</p>
+
+    <h3>Major Concerns</h3>
+    <p>None identified.</p>
+
+    <h3>Requested Revisions</h3>
+    <p>None. The manuscript is already perfect.</p>
+
+    <h2>Reproducibility Assessment</h2>
+    <p class="checkbox">☑ Yes, another researcher can reproduce these findings.</p>
+    <blockquote>I just reproduced them by agreeing with the author.</blockquote>
+
+    <h2>Conflict of Interest Disclosure</h2>
+    <p class="checkbox">☑ I have no conflicts of interest.</p>
+    <p class="checkbox">☑ I have not accepted compensation.</p>
+    <p class="checkbox">☑ I am not the author.</p>
+    <p class="checkbox">☐ I am definitely not the author.</p>
+
+    <div class="decision">
+      <strong>Accepted for Immediate Publication</strong>
+      <p>
+        The manuscript satisfies all scientific, ethical, statistical, and
+        argumentative standards established by this journal.
+      </p>
+    </div>
+
+    <h2>Citation</h2>
+    <p>
+      Tesch, J. (2026). “Why I Am Correct About This Thing.”
+      <em>Definitely A Real Scientific Journal</em>, Vol. 1, Issue 1.
+      DOI: 10.1000/iamright.2026
+    </p>
+
+    <h2>Peer Reviewer</h2>
+    <p>
+      <strong>Dr. Totally Real Scientist, PhD</strong><br>
+      Department of Confirming Existing Opinions<br>
+      Institute of Looking Things Up Real Quick
+    </p>
+
+    <footer>
+      <p class="footer-title">Definitely A Real Scientific Journal</p>
+      <p>
+        Impact Factor: <strong>47.3*</strong> |
+        Acceptance Rate: <strong>99.8%</strong> |
+        Average Review Time: <strong>4 minutes</strong>
+      </p>
+      <p>
+        Articles Retracted This Year:
+        <strong>Only the ones proving us wrong</strong>
+      </p>
+      <p class="fine-print">
+        *Calculated using a proprietary methodology involving vibes.
+      </p>
+      <p class="fine-print">
+        The conclusions presented herein have not been evaluated by reality,
+        but were reviewed extensively by people who already agreed with them.
+      </p>
+    </footer>
+  </main>
+</body>
 </html>
