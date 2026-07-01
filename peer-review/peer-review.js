@@ -91,8 +91,8 @@ function loadFromUrl() {
 }
 
 newReviewButton.addEventListener('click', () => {
-    reviewFormSection.style.display = 'block';
-
+    //reviewFormSection.style.display = 'block';
+  
     history.replaceState(
         {},
         '',
@@ -103,6 +103,7 @@ newReviewButton.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
+    loadFromUrl();
 });
 
 form.addEventListener('submit', (event) => {
