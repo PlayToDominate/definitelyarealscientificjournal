@@ -91,8 +91,7 @@ function loadFromUrl() {
 }
 
 newReviewButton.addEventListener('click', () => {
-    //reviewFormSection.style.display = 'block';
-  
+    // reviewFormSection.style.display = 'block';
     history.replaceState(
         {},
         '',
@@ -103,7 +102,19 @@ newReviewButton.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
-    loadFromUrl();
+    // loadFromUrl();
+});
+
+newReviewButton.addEventListener('click', () => {
+  reviewFormSection.style.display = 'block';
+  generateNewPeerReview.style.display = 'none';
+
+  history.replaceState({}, '', './');
+
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
 
 form.addEventListener('submit', (event) => {
@@ -118,6 +129,9 @@ form.addEventListener('submit', (event) => {
 
   window.history.pushState({}, '', url);
   renderReview(name, result);
+
+  reviewFormSection.style.display = 'none';
+  generateNewPeerReview.style.display = 'block';
 });
 
 copyButton.addEventListener('click', async () => {
