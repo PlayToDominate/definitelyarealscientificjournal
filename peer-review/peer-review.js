@@ -16,6 +16,9 @@ const reviewerComments = document.getElementById('reviewer-comments');
 const gusQuote = document.getElementById('gus-quote');
 const shareUrl = document.getElementById('share-url');
 const copyButton = document.getElementById('copy-link');
+const reviewFormSection = document.getElementById('review-form-section');
+const generateNewPeerReview = document.getElementById('generate-new-peer-review');
+const newReviewButton = document.getElementById('new-review-button');
 
 function cleanName(value) {
   return value.trim().replace(/[<>]/g, '') || 'Someone';
@@ -79,11 +82,28 @@ function loadFromUrl() {
   const params = new URLSearchParams(window.location.search);
   const name = cleanName(params.get('name') || '');
   const result = params.get('result') === 'wrong' ? 'wrong' : 'right';
-
+  generateNewPeerReview.style.display='none';
   if (params.has('name')) {
-    renderReview(name, result);
+      reviewFormSection.style.display = 'none';
+      generateNewPeerReview.style.display='block';
+      renderReview(name, result);
   }
 }
+
+newReviewButton.addEventListener('click', () => {
+    reviewFormSection.style.display = 'block';
+
+    history.replaceState(
+        {},
+        '',
+        '/peer-review/'
+    );
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
