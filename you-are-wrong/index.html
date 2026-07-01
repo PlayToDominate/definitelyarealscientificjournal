@@ -8,11 +8,26 @@
 </head>
 <body>
   <main class="page verdict-page">
-    <header>
-      <p class="journal-name">Definitely A Real Scientific Journal</p>
-      <p class="subtitle">Independent Peer Review Division</p>
-      <span class="badge">Peer Reviewed*</span>
-    </header>
+<header>
+  <p class="journal-name">Definitely A Real Scientific Journal</p>
+  <p class="subtitle">Peer reviewed. Fact checked by Gus.</p>
+  <span class="badge">Peer Reviewed*</span>
+  <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+    ☰
+  </button>
+
+  <nav class="site-nav">
+    <a href="../">Home</a>
+    <a href="../i-am-right/">I Am Right</a>
+    <a href="../you-are-wrong/">You Are Wrong</a>
+    <a href="../they-are-right/">They Are Right</a>
+    <a href="../they-are-wrong/">They Are Wrong</a>
+    <!--
+    <a href="../further-research-required/">Further Research Required</a>
+    <a href="../about/">About</a>
+    -->
+  </nav>
+</header>
 
     <section class="hero-verdict">
       <p class="kicker">Official Editorial Finding</p>
@@ -30,40 +45,63 @@
         inadequate agreement with me, and failure to be something I already believed.
       </p>
     </div>
+    <div class="content-layout">
+        <section>
+        <h2>Review Criteria</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>Agreement With Me</td>
+              <td>0/10</td>
+            </tr>
+            <tr>
+              <td>Ability To Change My Mind</td>
+              <td>0/10</td>
+            </tr>
+            <tr>
+              <td>Vibes</td>
+              <td>Scientifically Poor</td>
+            </tr>
+            <tr>
+              <td>Reviewer Confidence</td>
+              <td>Alarmingly High</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <h2>Review Criteria</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td>Agreement With Me</td>
-          <td>0/10</td>
-        </tr>
-        <tr>
-          <td>Ability To Change My Mind</td>
-          <td>0/10</td>
-        </tr>
-        <tr>
-          <td>Vibes</td>
-          <td>Scientifically Poor</td>
-        </tr>
-        <tr>
-          <td>Reviewer Confidence</td>
-          <td>Alarmingly High</td>
-        </tr>
-      </tbody>
-    </table>
+        <h2>Reviewer Comments</h2>
+        <blockquote>
+          The argument was reviewed carefully and found to be incompatible with
+          the reviewer’s preferred conclusion.
+        </blockquote>
 
-    <h2>Reviewer Comments</h2>
-    <blockquote>
-      The argument was reviewed carefully and found to be incompatible with
-      the reviewer’s preferred conclusion.
-    </blockquote>
+        <h2>Requested Revisions</h2>
+        <p>
+          The author is encouraged to revise their claim until it becomes my claim.
+        </p>
+      </section>
+      <aside>
+        <section class="side-note">
+          <h3>Editor’s Note</h3>
+          <p class="gus-quote">
+            “Extraordinary claims require extraordinary snacks.”
+          </p>
+          <p class="gus-credit">
+            — <span class="orange-cat">Gus the Cat</span><br>
+            Editor-in-Chief
+          </p>
+        </section>
 
-    <h2>Requested Revisions</h2>
-    <p>
-      The author is encouraged to revise their claim until it becomes my claim.
-    </p>
-
+        <section class="side-note">
+          <h3>Disclosure</h3>
+          <p>
+            Writer’s opinion can be changed with good bourbon, better evidence,
+            or an exceptionally convincing cheese plate.
+          </p>
+          <p class="bourbon-glass">🥃</p>
+        </section>
+      </aside>
+    </div>
     <footer>
       <p class="footer-title">Definitely A Real Scientific Journal</p>
       <p>
@@ -84,5 +122,6 @@
       </p>
     </footer>
   </main>
+  <script src="../scripts.js"></script>
 </body>
 </html>

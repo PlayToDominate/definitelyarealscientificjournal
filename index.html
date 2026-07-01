@@ -8,6 +8,21 @@
 </head>
 <body>
   <main class="page">
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="site-nav">
+      <a href="./">Home</a>
+      <a href="i-am-right/">I Am Right</a>
+      <a href="you-are-wrong/">You Are Wrong</a>
+      <a href="they-are-right/">They Are Right</a>
+      <a href="they-are-wrong/">They Are Wrong</a>
+      <!--
+      <a href="further-research-required/">Further Research Required</a>
+      <a href="about/">About</a>
+    -->
+    </nav>
     <section class="home-hero">
       <div class="seal">★</div>
       <p class="journal-name">Definitely A Real Scientific Journal</p>
@@ -19,44 +34,68 @@
         <span>Average Review Time: 4 Minutes</span>
       </div>
     </section>
+    <div class="content-layout">
+        <section>
+          <div class="breaking-news">
+            Current Scientific Consensus: I Am Right
+          </div>
 
-    <div class="breaking-news">
-      Current Scientific Consensus: I Am Right
-    </div>
+          <h2>Recently Published Research</h2>
 
-    <h2>Recently Published Research</h2>
+          <section class="article-grid">
+            <article class="article-card">
+              <h3><a href="i-am-right/">Why I Am Right</a></h3>
+              <p>A comprehensive review confirming the author's exceptional correctness.</p>
+              <span class="status accepted">Accepted as Established Fact</span>
+            </article>
 
-    <section class="article-grid">
-      <article class="article-card">
-        <h3><a href="i-am-right/">Why I Am Right</a></h3>
-        <p>A comprehensive review confirming the author's exceptional correctness.</p>
-        <span class="status accepted">Accepted as Established Fact</span>
-      </article>
+            <article class="article-card">
+              <h3><a href="you-are-wrong/">Why You Are Wrong</a></h3>
+              <p>An investigation into the shortcomings of alternative viewpoints.</p>
+              <span class="status rejected">Rejected for Insufficient Correctness</span>
+            </article>
+          </section>
 
-      <article class="article-card">
-        <h3><a href="you-are-wrong/">Why You Are Wrong</a></h3>
-        <p>An investigation into the shortcomings of alternative viewpoints.</p>
-        <span class="status rejected">Rejected for Insufficient Correctness</span>
-      </article>
-    </section>
+          <h2>Journal Statistics</h2>
 
-    <h2>Journal Statistics</h2>
+          <table>
+            <tr><td>Articles Published</td><td>2</td></tr>
+            <tr><td>Articles Supporting Me</td><td>2</td></tr>
+            <tr><td>Articles Contradicting Me</td><td>0</td></tr>
+            <tr><td>Scientific Consensus</td><td>Unanimous</td></tr>
+          </table>
 
-    <table>
-      <tr><td>Articles Published</td><td>2</td></tr>
-      <tr><td>Articles Supporting Me</td><td>2</td></tr>
-      <tr><td>Articles Contradicting Me</td><td>0</td></tr>
-      <tr><td>Scientific Consensus</td><td>Unanimous</td></tr>
-    </table>
+          <h2>Editorial Board</h2>
 
-    <h2>Editorial Board</h2>
+          <ul>
+            <li>Dr. Totally Real Scientist, PhD</li>
+            <li>Professor Emeritus of Confirmation Bias</li>
+            <li>Senior Fellow, Institute of Looking Things Up Real Quick</li>
+            <li>Gus the Cat, Honorary Reviewer</li>
+          </ul>
+        </section>
+        <aside>
+          <section class="side-note">
+            <h3>Editor’s Note</h3>
+            <p class="gus-quote">
+              “Extraordinary claims require extraordinary snacks.”
+            </p>
+            <p class="gus-credit">
+              — <span class="orange-cat">Gus the Cat</span><br>
+              Editor-in-Chief
+            </p>
+          </section>
 
-    <ul>
-      <li>Dr. Totally Real Scientist, PhD</li>
-      <li>Professor Emeritus of Confirmation Bias</li>
-      <li>Senior Fellow, Institute of Looking Things Up Real Quick</li>
-      <li>Gus the Cat, Honorary Reviewer</li>
-    </ul>
+          <section class="side-note">
+            <h3>Disclosure</h3>
+            <p>
+              Writer’s opinion can be changed with good bourbon, better evidence,
+              or an exceptionally convincing cheese plate.
+            </p>
+            <p class="bourbon-glass">🥃</p>
+          </section>
+        </aside>
+      </div>
 
     <footer>
       <p class="footer-title">Definitely A Real Scientific Journal</p>
@@ -66,5 +105,6 @@
       <p class="fine-print">The conclusions presented herein have not been evaluated by reality, but were reviewed extensively by people who already agreed with them.</p>
     </footer>
   </main>
+  <script src="scripts.js"></script>
 </body>
 </html>
