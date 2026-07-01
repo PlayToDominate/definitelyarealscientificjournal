@@ -8,21 +8,7 @@
 </head>
 <body>
   <main class="page">
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-      ☰
-    </button>
-
-    <nav class="site-nav">
-      <a href="./">Home</a>
-      <a href="i-am-right/">I Am Right</a>
-      <a href="you-are-wrong/">You Are Wrong</a>
-      <a href="they-are-right/">They Are Right</a>
-      <a href="they-are-wrong/">They Are Wrong</a>
-      <!--
-      <a href="further-research-required/">Further Research Required</a>
-      <a href="about/">About</a>
-    -->
-    </nav>
+    <header>    
     <section class="home-hero">
       <div class="seal">★</div>
       <p class="journal-name">Definitely A Real Scientific Journal</p>
@@ -34,6 +20,22 @@
         <span>Average Review Time: 4 Minutes</span>
       </div>
     </section>
+          <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="site-nav">
+        <a href="./">Home</a>
+        <a href="i-am-right/">I Am Right</a>
+        <a href="you-are-wrong/">You Are Wrong</a>
+        <a href="they-are-right/">They Are Right</a>
+        <a href="they-are-wrong/">They Are Wrong</a>
+        <!--
+        <a href="further-research-required/">Further Research Required</a>
+        <a href="about/">About</a>
+      -->
+      </nav>
+    </header>
     <div class="content-layout">
         <section>
           <div class="breaking-news">
@@ -53,6 +55,17 @@
               <h3><a href="you-are-wrong/">Why You Are Wrong</a></h3>
               <p>An investigation into the shortcomings of alternative viewpoints.</p>
               <span class="status rejected">Rejected for Insufficient Correctness</span>
+            </article>
+            <article class="article-card">
+              <h3><a href="they-are-right/">Why They Are Right</a></h3>
+              <p>A comprehensive review confirming "They" are, tragically, correct.</p>
+              <span class="status accepted">Accepted as Established Fact</span>
+            </article>
+
+            <article class="article-card">
+              <h3><a href="they-are-wrong/">Why They Are Wrong</a></h3>
+              <p>An investigation into the shortcomings of the all-encompassing "They".</p>
+              <span class="status rejected">Rejected by Gus the Cat</span>
             </article>
           </section>
 
