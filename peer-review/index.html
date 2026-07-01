@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peer Review | Definitely A Real Scientific Journal</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <nav class="site-nav">
+        <a href="../">Home</a>
+        <a href="../i-am-right/">I Am Right</a>
+        <a href="../you-are-wrong/">You Are Wrong</a>
+        <a href="../they-are-right/">They Are Right</a>
+        <a href="../they-are-wrong/">They Are Wrong</a>
+        <a href="../peer-review/">Peer Review Generator</a>
+      </nav>
+
+      <p class="journal-name">Definitely A Real Scientific Journal</p>
+      <p class="subtitle">Custom conclusions. Peer reviewed instantly.</p>
+      <span class="badge">Peer Reviewed*</span>
+    </header>
+
+    <section class="side-note">
+      <h2>Submit a Person for Peer Review</h2>
+
+      <form id="review-form">
+        <p>
+          <label for="name"><strong>Name under review</strong></label><br>
+          <input id="name" name="name" type="text" placeholder="Bob" required>
+        </p>
+
+        <p>
+          <label for="result"><strong>Editorial finding</strong></label><br>
+          <select id="result" name="result">
+            <option value="right">Is Right</option>
+            <option value="wrong">Is Wrong</option>
+          </select>
+        </p>
+
+        <button type="submit">Submit for Peer Review</button>
+      </form>
+    </section>
+
+    <section class="hero-verdict" id="verdict-section">
+      <p class="kicker" id="kicker">Official Editorial Finding</p>
+      <h1 id="verdict-title">Peer Review Pending</h1>
+      <p class="hero-subtitle" id="verdict-subtitle">
+        Enter a name above to generate a scientifically convenient conclusion.
+      </p>
+      <div id="verdict-stamp" class="correct-stamp">AWAITING VIBES</div>
+    </section>
+
+    <div class="content-layout">
+      <section>
+        <div class="decision">
+          <strong id="decision-title">Pending Review</strong>
+          <p id="decision-text">
+            The committee is standing by with strong opinions and limited accountability.
+          </p>
+        </div>
+
+        <h2>Review Criteria</h2>
+        <table>
+          <tr><td>Evidence Quality</td><td id="evidence-score">Under Review</td></tr>
+          <tr><td>Logic</td><td id="logic-score">Pending</td></tr>
+          <tr><td>Reviewer Confidence</td><td>Alarmingly High</td></tr>
+          <tr><td>Bourbon Adjusted Certainty</td><td>Subject to Change</td></tr>
+        </table>
+
+        <h2>Reviewer Comments</h2>
+        <blockquote id="reviewer-comments">
+          No conclusion has been reached, though the reviewer already has a feeling.
+        </blockquote>
+
+        <h2>Shareable Citation</h2>
+        <p>
+          <input id="share-url" type="text" readonly>
+          <button id="copy-link" type="button">Copy Link</button>
+        </p>
+      </section>
+
+      <aside>
+        <section class="side-note">
+          <h3>Editor’s Note</h3>
+          <p class="gus-quote" id="gus-quote">
+            “Extraordinary claims require extraordinary snacks.”
+          </p>
+          <p class="gus-credit">
+            — <span class="orange-cat">Gus the Cat</span><br>
+            Orange Cat, Editor-in-Chief
+          </p>
+        </section>
+
+        <section class="side-note">
+          <h3>Disclosure</h3>
+          <p>
+            Writer’s opinion can be changed with good bourbon, better evidence,
+            or an exceptionally convincing cheese plate.
+          </p>
+          <p class="bourbon-glass">🥃</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>
+      <p class="footer-title">Definitely A Real Scientific Journal</p>
+      <p class="fine-print">*Calculated using a proprietary methodology involving vibes.</p>
+    </footer>
+  </main>
+
+  <script src="../scripts.js"></script>
+  <script src="peer-review.js"></script>
+</body>
+</html>
